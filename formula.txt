@@ -1,1 +1,22 @@
 minmaxscaler = x-x(min)/x(max)-x(min)
+
+##LogisticRegression
+   Y=1/1+e^-x
+sigmoid function.
+basicaly used for categorical data.
+1->0.5->0
+0.6 to 1 =classA
+0 to 0.4 =classB
+0.5 =unclassified.
+
+##AdaBoostingClassifier
+
+step-1: initailize the observation n into 1/n
+step-2:total error =error/n
+step-3:calculate->
+              perfomance of stump =1/2.x.log(e).(1-total error)/total error
+step-4:update missclassification(increase) and right classification(decrease)
+      update,   new =Old* e^+-(performance)
+        
+step-5:normalize the value
+step-6:repeat step 2-4 till accorcy achieved.
